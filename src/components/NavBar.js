@@ -50,8 +50,9 @@ const onUpdateActiveLink =(value)=>{
                 <a href="https://www.instagram.com/ocean_giri23/" target="_blank" > <img src={navIcon3} alt="Instagram"/></a>
                 <a href="https://github.com/oceangiri23" target="_blank" > <img src={navIcon4} alt="Github"/></a>
             </div>
-             <button  className='vvd'>Let's Connect</button>
-
+            <form target="_blank" >
+             <button className='vvd' formaction='https://drive.google.com/file/d/1wWBfe_J17Qwl543eMdUiLaeE3jbBsM9c/view?usp=share_link'  > Get Resume</button>
+             </form>
           </span>
 
 
@@ -61,4 +62,3 @@ const onUpdateActiveLink =(value)=>{
   )
 }
 
-// export default NavBar

@@ -53,7 +53,7 @@ export const Banner =() =>{
                          in the technical world. With a strong desire to challenge myself, constantly seeks to push my
                           limits and expand my knowledge. Whether it's designing software applications or building
                            hardware systems, I loves to dive deep into the world of technology.</p>
-                    <Nav.Link href="#connect" > <button onClick={() => console.log('connect')}>Lets connect &rarr;</button></Nav.Link>
+                    <Nav.Link href="#connect" > <button onClick={() => console.log('connect')}>Let's Connect &rarr;</button></Nav.Link>
                     
                     </Col>
                     <Col xs={12} md={6} xl={5}>

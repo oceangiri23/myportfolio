@@ -1,9 +1,9 @@
 import {Container, Tab, Col, Row, Nav} from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
-import colorSharp2 from '../assets/img/color-sharp2.png';
+
 import newsroom from '../assets/img/newsroom.png';
 import coin from '../assets/img/coin.png';
-import projImg3 from '../assets/img/project-img3.png';
+
 import pong from '../assets/img/pong.png';
 
 
@@ -36,23 +36,6 @@ export const Projects = () =>{
         }
     ];
 
-    // {
-    //     title:"Business startup",
-    //     description : "Design and Development",
-    //     imgUrl: projImg1,
-    // },
-
-    // {
-    //     title:"Business startup",
-    //     description : "Design and Development",
-    //     imgUrl: projImg2,
-    // },
-
-    // {
-    //     title:"Business startup",
-    //     description : "Design and Development",
-    //     imgUrl: projImg3,
-    // },
     
 
 
@@ -111,7 +94,7 @@ export const Projects = () =>{
                     </Col>
                 </Row>
             </Container>
-            {/* <img className='background-image-right' src={colorSharp2}></img> */}
+           
         </section>
 
     );
