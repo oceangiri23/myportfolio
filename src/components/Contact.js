@@ -1,7 +1,7 @@
 import {useState} from "react";
 import contactImg from "../assets/img/contact-img.svg";
 import { Container, Row, Col } from "react-bootstrap";
-import { response } from "express";
+// import { response } from "express";
 
 export const Contact = () =>{
 
@@ -27,7 +27,7 @@ const onFormUpdate = (category, value) => {
 const handleSubmit = async (e) =>{
     e.preventDefault();
     setButtonText('Sending...');
-    let reponse = await fetch ("http://localhost:3000/contact",{
+    let response = await fetch ("http://localhost:3000/contact",{
         method: "POST",
         headers: {
             "Content-Type" : "Application/json;charset=utf-8",
@@ -35,7 +35,11 @@ const handleSubmit = async (e) =>{
         body: JSON.stringify(formDetails),
     });
     setButtonText('Send');
-    let result = response.json();
+
+
+     let result = response.json();
+
+
     if (result.code === 200){
         setStatus({success: true, message: "Message sent successfully"});
     }else {
