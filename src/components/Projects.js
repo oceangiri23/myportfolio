@@ -1,34 +1,40 @@
 import {Container, Tab, Col, Row, Nav} from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
-import projImg1 from '../assets/img/project-img1.png';
-import projImg2 from '../assets/img/project-img2.png';
+import newsroom from '../assets/img/newsroom.png';
+import coin from '../assets/img/coin.png';
 import projImg3 from '../assets/img/project-img3.png';
+import pong from '../assets/img/pong.png';
 
 
 export const Projects = () =>{
 
     const projects = [
         {
-        title:"Business startup",
-        description : "Design and Development",
-        imgUrl: projImg1,
-        Url:"https://github.com/oceangiri23/Game-PONG",
+        title:"The Newsroom",
+        description : "The-Newsroom is a news site which uses API to get news data and displays it in interactive manner. It is developed using react framework.",
+        imgUrl: newsroom,
+        Url:"https://github.com/oceangiri23/The-Newsroom",
     },
 
     {
-        title:"Business startup",
-        description : "Design and Development",
-        imgUrl: projImg2,
-        Url:"https://github.com/oceangiri23/Game-PONG",
+        title:"Toss the Coin",
+        description : "This is a simple web-based game that allows the user to choose heads or tails and then flips a coin to determine the outcome.",
+        imgUrl: coin,
+        Url:"https://github.com/oceangiri23/Toss-the-Coin",
     },
 
-    {
-        title:"Business startup",
-        description : "Design and Development",
-        imgUrl: projImg3,
-        Url:"https://github.com/oceangiri23/Game-PONG",
-    },
+   
+];
+
+    const projectsgame = [
+        {
+            title:"Game-Pong",
+            description : "This is a simple implementation of the classic Pong game using C programming language and the raylib game development library",
+            imgUrl: pong,
+            Url:"https://github.com/oceangiri23/Game-PONG",
+        }
+    ];
 
     // {
     //     title:"Business startup",
@@ -47,7 +53,7 @@ export const Projects = () =>{
     //     description : "Design and Development",
     //     imgUrl: projImg3,
     // },
-    ];
+    
 
 
     return (
@@ -63,16 +69,17 @@ export const Projects = () =>{
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" defaultActiveKey="/home">
                     <Col>              
-                    <Nav.Item><Nav.Link eventKey="first">Tab One</Nav.Link> </Nav.Item>
+                    <Nav.Item><Nav.Link eventKey="first">Web Projects</Nav.Link> </Nav.Item>
                     </Col>
                     <Col>
-                     <Nav.Item><Nav.Link eventKey="second">Tab two</Nav.Link></Nav.Item>
+                     <Nav.Item><Nav.Link eventKey="second">Games</Nav.Link></Nav.Item>
                      </Col>
                      <Col>
-                    <Nav.Item> <Nav.Link eventKey="third" >Tab Three</Nav.Link></Nav.Item>
+                    <Nav.Item> <Nav.Link eventKey="third" >Data Science</Nav.Link></Nav.Item>
                     </Col>
                     </Nav>
                     <Tab.Content className='projectcards'>
+
                         <Tab.Pane eventKey='first'>
                             <Row >
                                 {
@@ -84,8 +91,21 @@ export const Projects = () =>{
                                 }
                             </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey='second'>Loren Ipsum</Tab.Pane>
-                        <Tab.Pane eventKey='third'>Loren Ipsum</Tab.Pane>
+                      
+                        <Tab.Pane eventKey='second'>
+                        <Row >
+                                {
+                                    projectsgame.map((projectsgame, index) => {
+                                        return (
+                                            <ProjectCard key={index} {...projectsgame} />
+                                        )
+                                    })
+                                }
+                            </Row>
+                        </Tab.Pane>
+
+
+                        <Tab.Pane eventKey='third' className='datascience'>Projects on this topic are yet to come.</Tab.Pane>
                     </Tab.Content>
                     </Tab.Container>
                     </Col>

@@ -1,9 +1,12 @@
 import {Container, Row, Col } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from '../assets/img/meter1.svg';
-import meter2 from '../assets/img/meter2.svg';
-import meter3 from '../assets/img/meter3.svg';
+import htmlcss from '../assets/img/htmlcss.png';
+import js from '../assets/img/js.png';
+import react from '../assets/img/react.png';
+import github from '../assets/img/github.png';
+import ai from '../assets/img/ai.png';
+import c from '../assets/img/c.png';
 import colorSharp from '../assets/img/color-sharp.png';
 
 
@@ -37,29 +40,39 @@ export const Skills = () =>{
                         <Col>
                         <div className='skill-bx'>
                         <h2> Skills </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex inventore ratione odio, quasi iste, eveniet, impedit totam non facilis accusantium nobis! Explicabo repellat velit sapiente dolores modi ipsum quasi.</p>
+                        {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex inventore ratione odio, quasi iste, eveniet, impedit totam non facilis accusantium nobis! Explicabo repellat velit sapiente dolores modi ipsum quasi.</p> */}
                        
                      
                         <Carousel responsive={responsive} infinite={true}  className='skill-slider' >
+                        <div className='item'>
+                                <img src={ai} alt="Image"/>
+                                <h5>Adobe Illustrator</h5>
+                            </div>
                             <div className='item'>
-                                <img src={meter1} alt="Image"/>
+                                <img src={c} alt="Image"/>
+                                <h5>C / C++</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={htmlcss} alt="Image"/>
                                 <h5>HTML/CSS</h5>
                             </div>
 
                             <div className='item'>
-                                <img src={meter2} alt="Image"/>
+                                <img src={js} alt="Image"/>
                                 <h5>Java Script</h5>
                             </div>
 
                             <div className='item'>
-                                <img src={meter3} alt="Image"/>
+                                <img src={react} alt="Image"/>
                                 <h5>React</h5>
                             </div>
 
                             <div className='item'>
-                                <img src={meter1} alt="Image"/>
+                                <img src={github} alt="Image"/>
                                 <h5>Git/Git HUB</h5>
                             </div>
+                           
+                        
                         </Carousel>
                         </div> 
                         </Col>

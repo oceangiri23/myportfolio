@@ -50,7 +50,7 @@ const onUpdateActiveLink =(value)=>{
                 <a href="https://www.instagram.com/ocean_giri23/" target="_blank" > <img src={navIcon3} alt="Instagram"/></a>
                 <a href="https://github.com/oceangiri23" target="_blank" > <img src={navIcon4} alt="Github"/></a>
             </div>
-           <Nav.Link href="#connect" >  <button className='vvd'  onClick={()=> console.log("Lets goo")}><span>Let's Connect</span></button></Nav.Link>
+             <button  className='vvd'>Let's Connect</button>
 
           </span>
 

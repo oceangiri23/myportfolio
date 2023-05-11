@@ -6,7 +6,7 @@ import { unstable_batchedUpdates } from "react-dom";
 export const Banner =() =>{
     const [loopNum, setLoopNum]= useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
+    const toRotate = ['Learner', 'Explorer'];
     const [text, setText]= useState('');
     const [delta, setDelta] = useState(300-Math.random()*200);
     const period = 2000;
@@ -49,8 +49,12 @@ export const Banner =() =>{
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h2>Hi I'm Sagar Giri </h2>
                         <h3> &nbsp; <span className="wrap">{text}</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae dolorum maxime, sit culpa alias totam eaque qui necessitatibus eveniet adipisci suscipit deleniti tempore. Alias quia autem nobis eligendi expedita?</p>
+                        <p> A passionated Computer Engineering Student who is always eager to learn and explore new ideas
+                         in the technical world. With a strong desire to challenge myself, constantly seeks to push my
+                          limits and expand my knowledge. Whether it's designing software applications or building
+                           hardware systems, I loves to dive deep into the world of technology.</p>
                     <Nav.Link href="#connect" > <button onClick={() => console.log('connect')}>Lets connect &rarr;</button></Nav.Link>
+                    
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img"/>
