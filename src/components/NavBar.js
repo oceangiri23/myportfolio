@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import {Navbar, Container, Nav}from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/download.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
  
  
 
@@ -30,7 +31,7 @@ const onUpdateActiveLink =(value)=>{
   return (
     <Navbar  expand="lg" className={scrolled ? "scrolled":""}>
       <Container>
-        <Navbar.Brand href="#home"><img src={logo} alt='logo'/></Navbar.Brand>
+        <Navbar.Brand href="#home"><img  className='mainlogo' src={logo} alt='logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
         <span className='navbar-toggle-icon'></span>
         </Navbar.Toggle>
@@ -44,11 +45,12 @@ const onUpdateActiveLink =(value)=>{
 
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href="#"> <img src={navIcon1} alt=""/></a>
-                <a href="#"> <img src={navIcon2} alt=""/></a>
-                <a href="#"> <img src={navIcon3} alt=""/></a>
+                <a href="https://www.linkedin.com/in/sagar-giri23/" target="_blank" > <img src={navIcon1} alt="linkedin"/></a>
+                <a href="https://www.facebook.com/Ocean.Sagar.Giri.75491856/" target="_blank" > <img src={navIcon2} alt="Facebook"/></a>
+                <a href="https://www.instagram.com/ocean_giri23/" target="_blank" > <img src={navIcon3} alt="Instagram"/></a>
+                <a href="https://github.com/oceangiri23" target="_blank" > <img src={navIcon4} alt="Github"/></a>
             </div>
-            <button className='vvd' onClick={()=> console.log("Lets goo")}><span>Let's Connect</span></button>
+           <Nav.Link href="#connect" >  <button className='vvd'  onClick={()=> console.log("Lets goo")}><span>Let's Connect</span></button></Nav.Link>
 
           </span>
 
