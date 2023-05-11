@@ -3,7 +3,7 @@ import {Container,  Col, Row } from "react-bootstrap";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-
+import logo from '../assets/img/logo.svg';
 
 export const Footer = () => {
     return (
@@ -12,7 +12,7 @@ export const Footer = () => {
         <Row className="align-item-center">
             {/* <MailchimpForm /> */}
             <Col sm={6}>
-                <img src="logo" alt="Logo" />           
+                <img src={logo} alt="Logo" />           
             </Col>
             <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
@@ -21,7 +21,7 @@ export const Footer = () => {
                 <a href=""><img src={navIcon3}/></a>
             </div>
             </Col>
-            <p>CopyRight 2022. All Right Reserved</p>
+            <p>&#169; <b>Sagar Giri</b>. All Rights Reserved</p>
         </Row>
         </Container>
         </footer>
