@@ -775,7 +775,7 @@ label #btn,label #cancel {
  
   position: absolute;
   cursor: pointer;
-  background: #19526d;
+  background:rgba(219, 44, 228, 0.5);
   border-radius: 3px;
 }
 
