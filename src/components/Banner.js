@@ -6,10 +6,10 @@ import { unstable_batchedUpdates } from "react-dom";
 export const Banner =() =>{
     const [loopNum, setLoopNum]= useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Learner', 'Explorer'];
+    const toRotate = ['Learner', 'Explorer', 'Tech Enthusiast'];
     const [text, setText]= useState('');
     const [delta, setDelta] = useState(300-Math.random()*200);
-    const period = 2000;
+    const period = 800;
 
     useEffect(()=>{
         let ticker = setInterval(()=>{

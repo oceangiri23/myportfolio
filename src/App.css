@@ -44,9 +44,22 @@ h1,h2,h3,h4,h5,h6{
   padding: 0;
   line-height: normal;
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .mainlogo{
   width: 100px;
+  animation: rotation 2s infinite linear;
 }
+ 
+
 nav.navbar{
   background-color: rgb(32, 32, 32);
   padding : 18px 0;
@@ -173,11 +186,11 @@ border: 1px solid rgba(255, 255, 255, 0.5);
   position: absolute; 
 }
 
-/* nav.navbar .navbar-toggler:active,
+ nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus{
   outline: none;
   box-shadow: none;
-} */
+}
 
 nav.navbar .navbar-toggler-icon:focus {
   border-bottom: 2px solid #fff;
@@ -242,8 +255,9 @@ background-repeat: no-repeat;
 
 .banner h2  {
   color: rgb(54, 53, 53);
-  font-size: 65px;
+   font-size: 4em; 
   font-weight: 700;
+
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
@@ -375,6 +389,7 @@ background-color: #000;
 	font-weight: 700;
   text-align: center;
   color: rgb(70, 68, 68);
+  padding-bottom: 40px;
 }
 
 .projects p {
@@ -691,3 +706,185 @@ background-color: rgb(196, 211, 215);
 .footer .social-icon {
   margin-top: 20px;
 }
+
+
+
+
+
+
+.sidebar{
+  position: fixed;
+  right:-250px;
+  top: 100px;
+  width:250px;
+  height:70%;
+  background-color: rgb(0, 0, 0);
+  transition: all .5s ease;
+}
+
+.sidebar header{
+  font-size: 22px;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 70px;
+  
+  user-select: none;
+}
+.sidebar li {
+  height: 50px;
+}
+
+
+
+.sidebar ul a{
+  display: block;
+  height:70%;
+  width: 100%;
+  line-height: 30px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgb(255,255, 255,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+  text-decoration: none;
+}
+
+.sidebar ul a:hover {
+background-color: rgb(255, 255, 255);
+}
+
+ul li:hover a{
+  padding-left: 50px;
+
+}
+
+.sidebar ul a i{
+  margin-right: 16px;
+}
+
+#check{
+  display: none;
+}
+
+label #btn,label #cancel {
+ 
+  position: absolute;
+  cursor: pointer;
+  background: #19526d;
+  border-radius: 3px;
+}
+
+label #btn{
+  /* visibility: hidden; */
+  right: 15px;
+  top: 30px;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  padding: 6px 12px ;
+  transition: all .5s;
+}
+
+label #cancel {
+  
+  display: none;
+  z-index: 1111;
+  right: 195px;
+  top: 117px;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+  right: 0;
+}
+
+#check:checked ~ label #btn{
+  
+  right: 250px;
+  opacity:0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+  display: block;
+  right: 195px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+ .banner h2 {
+  font-size: 40px;
+    
+  }
+
+  .banner h3 {
+    font-size: 45px;
+  }
+
+  .banner p {
+    font-size: 15px;
+  }
+   .banner img {
+    width: 300px;
+   }
+
+   .banner button {
+    font-size: 16px;
+   
+    margin-top: 40px;
+   }
+}
+
+
+@media screen and (max-width: 770px) {
+  .banner h2 {
+   font-size: 30px;
+     
+   }
+ 
+   .banner h3 {
+     font-size: 35px;
+   }
+ 
+   .banner p {
+     font-size: 8px;
+   }
+    .banner img {
+     width: 200px;
+    }
+ 
+    .banner button {
+     font-size: 14px;
+    
+     margin-top: 30px;
+    }
+ }
+
+
+ @media screen and (max-width: 995px) {
+
+
+
+ }

@@ -5,6 +5,10 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/nav-icon4.svg';
+import { Sidebar } from '../components/Sidebar';
+
+
+
  
  
 
@@ -53,12 +57,15 @@ const onUpdateActiveLink =(value)=>{
             <form target="_blank" >
              <button className='vvd' formaction='https://drive.google.com/file/d/1wWBfe_J17Qwl543eMdUiLaeE3jbBsM9c/view?usp=share_link'  > Get Resume</button>
              </form>
+             <Sidebar/>
+           
           </span>
-
+          
 
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
   )
 }
 

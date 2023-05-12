@@ -1,9 +1,7 @@
 import {Container, Tab, Col, Row, Nav} from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
-
 import newsroom from '../assets/img/newsroom.png';
 import coin from '../assets/img/coin.png';
-
 import pong from '../assets/img/pong.png';
 
 
@@ -47,8 +45,7 @@ export const Projects = () =>{
                     <Col>
                     <h2> Projects</h2>
                    
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates voluptas at mollitia
-                         labore quae accusantium quis, quasi doloribus nostrum animi quo perferendis ipsum temporibus, sit consequuntur laudantium iusto inventore? Sint.</p>
+                    
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" defaultActiveKey="/home">
                     <Col>              

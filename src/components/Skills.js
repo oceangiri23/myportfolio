@@ -7,7 +7,8 @@ import react from '../assets/img/react.png';
 import github from '../assets/img/github.png';
 import ai from '../assets/img/ai.png';
 import c from '../assets/img/c.png';
-import colorSharp from '../assets/img/color-sharp.png';
+import python from '../assets/img/python.png';
+
 
 
 
@@ -70,6 +71,11 @@ export const Skills = () =>{
                             <div className='item'>
                                 <img src={github} alt="Image"/>
                                 <h5>Git/Git HUB</h5>
+                            </div>
+
+                            <div className='item'>
+                                <img src={python} alt="Image"/>
+                                <h5>Python</h5>
                             </div>
                            
                         
