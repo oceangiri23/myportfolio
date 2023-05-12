@@ -31,9 +31,9 @@ return ()=> window.removeEventListener("scroll",onScroll);
 const onUpdateActiveLink =(value)=>{
     setActiveLink(value);
 }
-
+// expand="lg"
   return (
-    <Navbar  expand="lg" className={scrolled ? "scrolled":""}>
+    <Navbar   className={scrolled ? "scrolled":""}>
       <Container>
         <Navbar.Brand href="#home"><img  className='mainlogo' src={logo} alt='logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >

@@ -10,7 +10,7 @@ export const Sidebar = () => {
     
 
     return(
-        <section>
+        <section className='sidebarmenu'>
         <input type="checkbox" id="check" />
         <label for="check">
           <i class="fas fa-bars" id="btn"></i>
