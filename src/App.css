@@ -308,6 +308,7 @@ font-family:Arial, Helvetica, sans-serif;
  .banner button:hover  {
   margin-left: 25px;
   background-color: #40e5fb;
+  border-color: #40e5fb;
 } 
 
 .banner img {
@@ -339,11 +340,11 @@ font-family:Arial, Helvetica, sans-serif;
 /* About */
 
 .about-whole {
+  
   height: 100vh ;
   background-color: #000;
 }
 .about-tab{
-  margin-top: 5vh;
   background-color: white;
   border-radius: 50px;
   border: 2px solid black;
@@ -363,7 +364,7 @@ font-family:Arial, Helvetica, sans-serif;
 .about_img img {
   width: 25vw;
   margin: 0 0 0 10vw ;
-  border: 1px dashed rgb(4, 4, 136);
+  border: 2px dashed rgb(4, 4, 136);
   border-radius: 20px;
  
 }
@@ -394,13 +395,13 @@ padding: 0 15px;
 }
 
 .about-text-head {
-  font-size: 20px;
+  font-size: 1.5vw;
   color: rgb(4, 4, 136);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .about-text-tail {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-family: 'Times New Roman', Times, serif
 }
 

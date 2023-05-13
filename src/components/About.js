@@ -4,7 +4,7 @@ import aboutimg from "../assets/img/aboutphoto.png";
 export const About = () =>{
 
     return (
-<section className="about-whole">
+<section className="about-whole" id="about">
     <Container className="about-tab" >
         <Row>
             <h2>About</h2>
