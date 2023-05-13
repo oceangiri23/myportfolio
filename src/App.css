@@ -337,22 +337,34 @@ font-family:Arial, Helvetica, sans-serif;
 
 
 /* About */
+
+.about-whole {
+  height: 100vh ;
+  background-color: #000;
+}
 .about-tab{
+  margin-top: 5vh;
+  background-color: white;
+  border-radius: 50px;
   border: 2px solid black;
-  height: 100vh;
-  margin-bottom: 10px;
+  height: 85vh;
+  margin-bottom: 5vh;
+  
 }
 
 .about-tab h2{
   text-align: center;
-  margin: 5vh auto 6vh auto;
+  margin: 3vh auto 5vh auto;
   font-size: 3vw;
   font-weight: 700;
+  -webkit-text-stroke: 1px rgb(4, 4, 136);
 }
 
 .about_img img {
   width: 25vw;
   margin: 0 0 0 10vw ;
+  border: 1px dashed rgb(4, 4, 136);
+  border-radius: 20px;
  
 }
 
@@ -362,13 +374,36 @@ font-family:Arial, Helvetica, sans-serif;
 
 .about-text h3 {
   font-size:2vw;
-  
-  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: rgb(4, 4, 136);
 }
 
 .about-table {
   margin-top: 5vh;
+  
 }
+
+.about-tab th {
+  height: 8vh;
+  width: 20vw;
+  
+}
+.about-tab td{
+padding: 0 15px;
+}
+
+.about-text-head {
+  font-size: 20px;
+  color: rgb(4, 4, 136);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-text-tail {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif
+}
+
 
 
 

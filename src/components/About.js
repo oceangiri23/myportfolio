@@ -4,7 +4,7 @@ import aboutimg from "../assets/img/aboutphoto.png";
 export const About = () =>{
 
     return (
-<section>
+<section className="about-whole">
     <Container className="about-tab" >
         <Row>
             <h2>About</h2>
@@ -21,50 +21,50 @@ export const About = () =>{
                 <table className="about-table">
                 <tr >
                         <th>
-                        <span>Name: </span>
-                        <span> Sagar Giri</span>
+                        <span className="about-text-head">Name: </span>
+                        <span className="about-text-tail"> Sagar Giri</span>
                         </th>
 
                         <th>
-                        <span>Address: </span>
-                        <span> Tilottame-1, Rupandehi</span>
-                        </th>
-                </tr>
-
-                <tr>
-                        <th>
-                        <span>Degree:</span>
-                        <span> Bachelor</span>
-                        </th>
-
-                        <th>
-                        <span> Affiliations:</span>
-                        <span>Pulchowk Engineering College</span>
+                        <span className="about-text-head">Address: </span>
+                        <span className="about-text-tail"> Tilottama-1, Rupandehi</span>
                         </th>
                 </tr>
 
                 <tr>
                         <th>
-                        <span>Contact: </span>
-                        <span> +977-9841615449</span>
+                        <span className="about-text-head" >Degree:</span>
+                        <span className="about-text-tail"> Bachelor</span>
                         </th>
 
                         <th>
-                        <span>Email </span>
-                        <span>oceangiri5656@gmail.com</span>
+                        <span className="about-text-head"> Affiliations:</span>
+                        <span className="about-text-tail">Pulchowk Engineering College</span>
+                        </th>
+                </tr>
+
+                <tr>
+                        <th>
+                        <span className="about-text-head">Contact: </span>
+                        <span className="about-text-tail"> +977-9841615449</span>
+                        </th>
+
+                        <th>
+                        <span className="about-text-head">Email: </span>
+                        <span className="about-text-tail">oceangiri5656@gmail.com</span>
                         </th>
                 </tr>
 
 
                 <tr>
                         <th>
-                        <span>Hobby: </span>
-                        <span> Travelling, Adventure</span>
+                        <span className="about-text-head">Hobby: </span>
+                        <span className="about-text-tail">Football,Adventure</span>
                         </th>
                         
                         <th>
-                        <span>Favorite Cartoon: </span>
-                        <span>Ninja Hattori</span>
+                        <span className="about-text-head">Favorite Cartoon: </span>
+                        <span className="about-text-tail">Scooby-Doo</span>
                         </th>
                 </tr>
                 </table>
