@@ -1,8 +1,12 @@
 My portfolio 
-open [http://oceangiri23@gmail.com] to view my portfolio...
 
-It uses React bootstrap package for css...
-It uses NodeMailer to send emails...
+
+Open [http://oceangiri23@gmail.com] to view my portfolio.
+
+It uses React bootstrap package for css.
+
+
+It uses NodeMailer to send emails.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
