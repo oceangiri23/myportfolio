@@ -59,7 +59,7 @@ export const About = () =>{
                 <tr>
                         <th>
                         <span className="about-text-head">Hobby: </span>
-                        <span className="about-text-tail">Football,Adventure</span>
+                        <span className="about-text-tail">Basketball, Adventure</span>
                         </th>
                         
                         <th>
