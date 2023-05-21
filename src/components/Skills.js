@@ -8,6 +8,7 @@ import github from '../assets/img/github.png';
 import ai from '../assets/img/ai.png';
 import c from '../assets/img/c.png';
 import python from '../assets/img/python.png';
+import wordpress from '../assets/img/wordpress.png';
 
 
 
@@ -52,6 +53,10 @@ export const Skills = () =>{
                             <div className='item'>
                                 <img src={c} alt="Image"/>
                                 <h5>C / C++</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={wordpress} alt="Image"/>
+                                <h5>WordPress</h5>
                             </div>
                             <div className='item'>
                                 <img src={htmlcss} alt="Image"/>
