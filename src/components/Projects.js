@@ -84,8 +84,9 @@ export const Projects = () =>{
                             </Row>
                         </Tab.Pane>
 
-
-                        <Tab.Pane eventKey='third' className='datascience'>Projects on this topic are yet to come.</Tab.Pane>
+                        <div class="bar">
+                        <Tab.Pane eventKey='third'  className='datascience bar_content '>Projects on this topic are yet to come.</Tab.Pane>
+                        </div>
                     </Tab.Content>
                     </Tab.Container>
                     </Col>
